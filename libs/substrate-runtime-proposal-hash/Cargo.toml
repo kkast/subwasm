@@ -3,7 +3,7 @@ name = "substrate-runtime-proposal-hash"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
-homepage = "https://github.com/chevdor/subwasm"
+homepage = "https://github.com/kkast/subwasm"
 keywords = [
 	"wasm",
 	"cli",
@@ -15,18 +15,18 @@ keywords = [
 ]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/chevdor/subwasm"
+repository = "https://github.com/kkast/subwasm"
 
 [dependencies]
 hex = "0.4"
 blake2 = "0.10"
 thiserror = "1.0"
 codec = { version = "3.1", package = "parity-scale-codec" }
-sp-core = { tag = "monthly-2023-06", git = "https://github.com/paritytech/substrate" }
-sp-io = { tag = "monthly-2023-06", git = "https://github.com/paritytech/substrate" }
-sp-runtime = { tag = "monthly-2023-06", git = "https://github.com/paritytech/substrate" }
-sp-wasm-interface = { tag = "monthly-2023-06", git = "https://github.com/paritytech/substrate" }
-frame-metadata = { package = "frame-metadata", git = "https://github.com/paritytech/frame-metadata", branch = "main", features = [
+sp-core = { branch = "polkadot-v0.9.43", git = "https://github.com/paritytech/substrate" }
+sp-io = { branch = "polkadot-v0.9.43", git = "https://github.com/paritytech/substrate" }
+sp-runtime = { branch = "polkadot-v0.9.43", git = "https://github.com/paritytech/substrate" }
+sp-wasm-interface = { branch = "polkadot-v0.9.43", git = "https://github.com/paritytech/substrate" }
+frame-metadata = { rev="d6e6c2bf820bd2067aadd7420f361cacaddbb09e", git = "https://github.com/paritytech/frame-metadata",  features = [
 	"v12",
 	"v13",
 	"v14",
